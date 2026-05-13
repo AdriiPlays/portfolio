@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adrián Muro Jiménez</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo"><em>AM</em> · Adrián Muro</div>
+  <ul class="nav-links">
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#experiencia">Experiencia</a></li>
+    <li><a href="#habilidades">Habilidades</a></li>
+    <li><a href="#formacion">Formación</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="nav-badge">Disponible</div>
+    <button class="theme-btn" id="themeBtn" title="Cambiar tema">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg-blob"></div>
+  <div class="hero-dots"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-label"><div class="hero-label-line"></div>Técnico Superior &amp; Desarrollador Web</div>
+      <h1 class="hero-name">Adrián<br><span class="blue">Muro.</span></h1>
+      <p class="hero-title">
+        <strong>Técnico Superior en Desarrollo de Aplicaciones Web</strong> con experiencia real en empresas del sector tecnológico e inmobiliario.
+      </p>
+      <div class="hero-type"><span id="typeTarget"></span><span class="tcursor"></span></div>
+      <div class="hero-actions">
+        <a href="#experiencia" class="btn-primary">Ver experiencia →</a>
+        <a href="#contacto" class="btn-outline">Contactar</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-n">5</div><div class="stat-l">Empresas</div></div>
+        <div class="stat"><div class="stat-n">6+</div><div class="stat-l">Tecnologías</div></div>
+        <div class="stat"><div class="stat-n">2</div><div class="stat-l">Titulaciones</div></div>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="t-bar">
+        <div class="t-dot r"></div><div class="t-dot y"></div><div class="t-dot g"></div>
+        <span class="t-title">adrian@portfolio ~</span>
+      </div>
+      <div class="t-body">
+        <div><span class="t-prompt">$</span> <span class="t-cmd">cat perfil.json</span></div>
+        <div class="t-out">{</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-cyan">"nombre"</span>: <span class="t-green">"Adrián Muro Jiménez"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-cyan">"rol"</span>: <span class="t-green">"TSDAT · DAW"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-cyan">"ubicacion"</span>: <span class="t-green">"Logroño, La Rioja"</span>,</div>
+        <div class="t-out">&nbsp;&nbsp;<span class="t-cyan">"email"</span>: <span class="t-green">"amuroj02@gmail.com"</span></div>
+        <div class="t-out">}</div>
+        <div>&nbsp;</div>
+        <div><span class="t-prompt">$</span> <span class="t-cmd">cat skills.sh</span></div>
+        <div class="t-out"><span class="t-green">✓</span> Linux · Windows Server · Redes</div>
+        <div class="t-out"><span class="t-green">✓</span> HTML · CSS · JS · PHP</div>
+        <div class="t-out"><span class="t-green">✓</span> MySQL · Docker · VMware</div>
+        <div>&nbsp;</div>
+        <div><span class="t-prompt">$</span> <span class="t-cmd">echo $STATUS</span></div>
+        <div class="t-out"><span class="t-green">● Disponible · Buscando empleo</span></div>
+        <div><span class="t-prompt">$</span>&nbsp;<span class="tcursor"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE MÍ -->
+<section id="sobre-mi">
+  <div class="s-inner">
+    <div class="s-eyebrow">01 · Sobre mí</div>
+    <h2 class="s-title">Quién soy</h2>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p>Soy un <strong>apasionado de la tecnología y la ingeniería informática</strong>, con un interés particular en la gestión de servidores Linux y Windows.</p>
+        <p>Mi curiosidad y entusiasmo por aprender constantemente me impulsan a explorar nuevas áreas y habilidades en el vasto campo de la tecnología. Me adapto con rapidez, trabajo con autonomía y me gusta entender el porqué de las cosas.</p>
+        <p>Actualmente cursando el <strong>Técnico Superior en Desarrollo de Aplicaciones Web</strong>, complementando mi base técnica en redes e infraestructura con programación web moderna, con prácticas en <strong>Brandcode</strong>.</p>
+        <div class="chips">
+          <div class="chip">🚗 Carnet B</div>
+          <div class="chip">🚙 Vehículo propio</div>
+          <div class="chip">📍 Logroño, La Rioja</div>
+          <div class="chip">🎯 Disponible inmediatamente</div>
+          <div class="chip">📚 Aprendizaje continuo</div>
+        </div>
+      </div>
+      <div class="about-card reveal">
+        <div class="about-photo-banner"></div>
+        <div class="about-photo-wrap">
+      <div class="about-photo-placeholder">
+  <img src="img/portada.jpg" alt="Adrián Muro" title="Adrián Muro">
+</div>
+        </div>
+        <div class="about-card-body">
+          <div class="about-card-name">Adrián Muro Jiménez</div>
+          <div class="about-card-role">Programador junior</div>
+          <div class="about-divider"></div>
+          <div class="about-detail-list">
+            <div class="about-detail">
+              <div class="icon">📧</div>
+              <div class="d-content"><div class="d-label">Email</div><div class="d-val">amuroj02@gmail.com</div></div>
+            </div>
+            <div class="about-detail">
+              <div class="icon">📞</div>
+              <div class="d-content"><div class="d-label">Teléfono</div><div class="d-val">664-191-173</div></div>
+            </div>
+            <div class="about-detail">
+              <div class="icon">📍</div>
+              <div class="d-content"><div class="d-label">Ubicación</div><div class="d-val">Logroño, La Rioja</div></div>
+            </div>
+            <div class="about-detail">
+              <div class="icon">🚗</div>
+              <div class="d-content"><div class="d-label">Movilidad</div><div class="d-val">Carnet B · Coche propio</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCIA -->
+<section id="experiencia">
+  <div class="s-inner">
+    <div class="s-eyebrow">02 · Experiencia</div>
+    <h2 class="s-title">Trayectoria laboral</h2>
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <div class="exp-logo-slot" title="Añade aquí el logo de IES La Laboral">
+            <img src="img/laboral.png" alt="laboral logo" title="laboral">
+        </div>
+        <div class="exp-card-top">
+          <div class="exp-company">IES La Laboral</div>
+          <div class="exp-date">03/2022 – 06/2022</div>
+        </div>
+        <div class="exp-badge">Prácticas SMR</div>
+        <div class="exp-role">Técnico SMR en Prácticas</div>
+        <div class="exp-desc">Prácticas como Técnico de Sistemas Microinformáticos y Redes. Administración de infraestructura de red, configuración de equipos y mantenimiento de sistemas.</div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-slot" title="Añade aquí el logo de Servimay">
+          <img src="img/servimay.png" alt="servimay logo" title="servimay">
+        </div>
+        <div class="exp-card-top">
+          <div class="exp-company">Servimay</div>
+          <div class="exp-date">06/2022 – 03/2024</div>
+        </div>
+        <div class="exp-badge">Gestión de Datos</div>
+        <div class="exp-role">Tratamiento de Datos</div>
+        <div class="exp-desc">Tratamiento de datos y gestión de residuos. Manejo de sistemas de registro y bases de datos operativas para el control y seguimiento de procesos.</div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-slot" title="Añade aquí el logo de Inmobiliaria Muro">
+          <img src="img/Muro.png" alt="Muro logo" title="Muro">
+        </div>
+        <div class="exp-card-top">
+          <div class="exp-company">Inmobiliaria Muro</div>
+          <div class="exp-date">04/2024 – 09/2024</div>
+        </div>
+        <div class="exp-badge">Gestión Digital</div>
+        <div class="exp-role">Gestor de Presencia Digital</div>
+        <div class="exp-desc">Gestión del portal inmobiliario y redes sociales. Publicación y actualización de contenidos, atención a clientes online y mantenimiento del sitio web.</div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-slot" title="Añade aquí el logo de Sonepar">
+          <img src="img/sonepar.png" alt="Sonepar logo" title="Sonepar">
+        </div>
+        <div class="exp-card-top">
+          <div class="exp-company">Sonepar</div>
+          <div class="exp-date">01/2025 – 08/2025</div>
+        </div>
+        <div class="exp-badge">Comercial &amp; Logística</div>
+        <div class="exp-role">Mozo de Almacén y Comercial</div>
+        <div class="exp-desc">Gestión de stock y atención al cliente como mozo de almacén y comercial en mostrador. Coordinación de inventario y logística en el sector de material eléctrico.</div>
+      </div>
+
+      <div class="exp-card wide">
+        <div class="exp-logo-slot" title="Añade aquí el logo de Brandcode">
+          <span>BCD</span>
+        </div>
+        <div class="exp-card-top">
+          <div class="exp-company">Brandcode</div>
+          <div class="exp-date">02/2026 – 05/2026</div>
+        </div>
+        <div class="exp-badge">Prácticas DAW</div>
+        <div class="exp-role">Técnico Superior en DAW — Prácticas</div>
+        <div class="exp-desc">Prácticas como Técnico Superior en Desarrollo de Aplicaciones Web. Desarrollo y mantenimiento de aplicaciones web, trabajo en equipo con metodologías modernas y tecnologías del sector.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HABILIDADES -->
+<section id="habilidades">
+  <div class="s-inner">
+    <div class="s-eyebrow">03 · Habilidades</div>
+    <h2 class="s-title">Competencias técnicas</h2>
+    <div class="skills-layout">
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ico">🖥️</div><div class="skill-label">Ofimática</div></div>
+        <div class="skill-tags"><span class="skill-tag">Word</span><span class="skill-tag">Excel</span><span class="skill-tag">PowerPoint</span><span class="skill-tag">Microsoft 365</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ico">🗄️</div><div class="skill-label">Bases de Datos</div></div>
+        <div class="skill-tags"><span class="skill-tag">MySQL</span><span class="skill-tag">HeidiSQL</span><span class="skill-tag">SQL</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ico">🌐</div><div class="skill-label">Desarrollo Web</div></div>
+        <div class="skill-tags"><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ico">📝</div><div class="skill-label">CMS</div></div>
+        <div class="skill-tags"><span class="skill-tag">WordPress</span><span class="skill-tag">Gestión de Contenidos</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ico">⚙️</div><div class="skill-label">Administración de Sistemas</div></div>
+        <div class="skill-tags"><span class="skill-tag">Linux</span><span class="skill-tag">Windows Server</span><span class="skill-tag">Redes TCP/IP</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ico">📦</div><div class="skill-label">Virtualización</div></div>
+        <div class="skill-tags"><span class="skill-tag">VMware</span><span class="skill-tag">VirtualBox</span><span class="skill-tag">Docker</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMACIÓN -->
+<section id="formacion">
+  <div class="s-inner">
+    <div class="s-eyebrow">04 · Formación</div>
+    <h2 class="s-title">Educación</h2>
+
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <div class="exp-logo-slot" title="IES Comercio">
+          <img src="img/comercio.png" alt="IES Comercio" title="IES Comercio">
+        </div>
+
+        <div class="exp-card-top">
+          <div class="exp-company">IES Comercio</div>
+          <div class="exp-date">09/2019 – 06/2022</div>
+        </div>
+
+        <div class="exp-badge">Grado Medio</div>
+        <div class="exp-role">Técnico en Sistemas Microinformáticos y Redes</div>
+        <div class="exp-desc">Formación en administración de sistemas, redes, hardware, software y mantenimiento de equipos informáticos.</div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo-slot" title="IES Comercio">
+          <img src="img/comercio.png" alt="IES Comercio" title="IES Comercio">
+        </div>
+
+        <div class="exp-card-top">
+          <div class="exp-company">IES Comercio</div>
+          <div class="exp-date">09/2023 – 06/2026</div>
+        </div>
+
+        <div class="exp-badge">Grado Superior</div>
+        <div class="exp-role">Técnico Superior en Desarrollo de Aplicaciones Web</div>
+        <div class="exp-desc">Formación en desarrollo web, backend, frontend, bases de datos y despliegue de aplicaciones.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos">
+  <div class="s-inner">
+    <div class="s-eyebrow">05 · Proyectos</div>
+    <h2 class="s-title">Proyectos destacados</h2>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <span>🌐</span>
+            <div class="proj-preview-label">Web / Frontend</div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">HTML</span><span class="proj-tag">CSS</span><span class="proj-tag">JavaScript</span><span class="proj-tag">PHP</span></div>
+          <div class="proj-name">GameDock</div>
+          <div class="proj-desc">
+Panel de administración con Docker para gestionar contenedores de aplicaciones y servidores de videojuegos. Permite controlar servicios, monitorizar estado y desplegar contenedores de forma sencilla.
+</div>
+          <div class="proj-footer">
+            <span class="proj-status proj-status--live">● En producción</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-preview">
+          <div class="proj-preview-inner">
+            <span>🏠</span>
+            <div class="proj-preview-label">Portal Inmobiliario</div>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span class="proj-tag">Witei</span><span class="proj-tag">CSS</span><span class="proj-tag">MySQL</span></div>
+          <div class="proj-name">Portal Inmobiliaria Muro</div>
+          <div class="proj-desc">Gestión y mantenimiento del portal web inmobiliario. Publicación de propiedades, integración con redes sociales y optimización SEO.</div>
+          <div class="proj-footer">
+            <span class="proj-status proj-status--live">● En producción</span>
+          </div>
+        </div>
+      </div>
+
+    
+    </div>
+    <p class="proj-note">💡 ¿Tienes un proyecto en mente? <a href="#contacto">Hablemos →</a></p>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="s-inner">
+    <div class="s-eyebrow">06 · Contacto</div>
+    <h2 class="s-title">Hablemos</h2>
+    <div class="contact-wrap">
+      <div class="reveal">
+        <p class="contact-intro">¿Tienes una oportunidad o proyecto en mente? Estoy disponible para nuevos retos. No dudes en contactarme por cualquiera de estos canales.</p>
+        <div class="contact-items">
+          <a href="mailto:amuroj02@gmail.com" class="contact-item">
+            <div class="c-ico">📧</div>
+            <div><div class="c-label">Email</div><div class="c-val">amuroj02@gmail.com</div></div>
+          </a>
+          <a href="tel:664191173" class="contact-item">
+            <div class="c-ico">📞</div>
+            <div><div class="c-label">Teléfono</div><div class="c-val">664-191-173</div></div>
+          </a>
+          <div class="contact-item">
+            <div class="c-ico">📍</div>
+            <div><div class="c-label">Ubicación</div><div class="c-val">Logroño, La Rioja, España</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="c-ico">🚗</div>
+            <div><div class="c-label">Movilidad</div><div class="c-val">Carnet B · Vehículo propio</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="f-row">
+          <div class="f-group"><label class="f-label">Nombre</label><input class="f-input" type="text" placeholder="Tu nombre"></div>
+          <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" placeholder="tu@email.com"></div>
+        </div>
+        <div class="f-group"><label class="f-label">Asunto</label><input class="f-input" type="text" placeholder="Motivo del contacto"></div>
+        <div class="f-group"><label class="f-label">Mensaje</label><textarea class="f-textarea" placeholder="Cuéntame en qué puedo ayudarte..."></textarea></div>
+        <button class="f-submit" onclick="handleSubmit(this)"><span>Enviar mensaje</span><span>→</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-brand">Adrián Muro Jiménez</div>
+  <div>© 2026 · Todos los derechos reservados</div>
+  <div><span class="f-accent">●</span> Disponible para nuevas oportunidades</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
