@@ -394,6 +394,27 @@ Panel de administración con Docker para gestionar contenedores de aplicaciones 
   </div>
 </section>
 
+  <script>
+document.querySelector(".contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  const res = await fetch("/__forms", {
+    method: "POST",
+    body: data
+  });
+
+  if (res.ok) {
+    alert("Mensaje enviado correctamente");
+    form.reset();
+  } else {
+    alert("Error al enviar el mensaje");
+  }
+});
+</script>
+
 
 <!-- FOOTER -->
 <footer>
