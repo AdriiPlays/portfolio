@@ -361,18 +361,39 @@ Panel de administración con Docker para gestionar contenedores de aplicaciones 
           </div>
         </div>
       </div>
-      <div class="contact-form reveal">
+
+      <!-- FORMULARIO ADAPTADO A CLOUDFLARE FORMS -->
+      <form class="contact-form reveal" method="POST" action="/__forms">
         <div class="f-row">
-          <div class="f-group"><label class="f-label">Nombre</label><input class="f-input" type="text" placeholder="Tu nombre"></div>
-          <div class="f-group"><label class="f-label">Email</label><input class="f-input" type="email" placeholder="tu@email.com"></div>
+          <div class="f-group">
+            <label class="f-label">Nombre</label>
+            <input class="f-input" type="text" name="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="f-group">
+            <label class="f-label">Email</label>
+            <input class="f-input" type="email" name="email" placeholder="tu@email.com" required>
+          </div>
         </div>
-        <div class="f-group"><label class="f-label">Asunto</label><input class="f-input" type="text" placeholder="Motivo del contacto"></div>
-        <div class="f-group"><label class="f-label">Mensaje</label><textarea class="f-textarea" placeholder="Cuéntame en qué puedo ayudarte..."></textarea></div>
-        <button class="f-submit" onclick="handleSubmit(this)"><span>Enviar mensaje</span><span>→</span></button>
-      </div>
+
+        <div class="f-group">
+          <label class="f-label">Asunto</label>
+          <input class="f-input" type="text" name="asunto" placeholder="Motivo del contacto" required>
+        </div>
+
+        <div class="f-group">
+          <label class="f-label">Mensaje</label>
+          <textarea class="f-textarea" name="mensaje" placeholder="Cuéntame en qué puedo ayudarte..." required></textarea>
+        </div>
+
+        <button class="f-submit" type="submit">
+          <span>Enviar mensaje</span><span>→</span>
+        </button>
+      </form>
     </div>
   </div>
 </section>
+
 
 <!-- FOOTER -->
 <footer>
